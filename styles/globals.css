@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: rgb(236, 236, 236);
 }
 
 a {
@@ -15,12 +16,174 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  padding: 100px; 
+}
+
+.product img{
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#preco{
+  font-weight: bold;
+}
+
+.product{
+  border: solid 2px rgb(53, 53, 53);
+  font-size: 1.75rem;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(216, 216, 216);
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 29, 63);
+  min-height: 150px;
+  align-items: center;
+}
+
+header h1{
+  color: rgb(231, 231, 231);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3rem;
+  padding: 5px;
+  border: solid 1px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  background-color: rgb(78, 56, 95);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#back{
+  margin-left: 10px;
+  height: 65px;
+  width: auto;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+}
+
+.center a{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.produto{
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem{
+  padding: 30px;
+  display: flex;
+  border: solid 10px rgb(51, 51, 51);
+  height: auto;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(228, 228, 228, 0.685);
+}
+
+.imagem img{
+  width: 60%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.produto h1{
+  font-size: 3rem;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-align: center;
+}
+
+.produto h1, p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.produto h3{
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descricao{
+  margin-left: 20%;
+  margin-right:20%;
+  text-align: center;
+  font-size: 1.7rem;
+  background-color: rgb(212, 212, 212);
+  border: 3px solid rgb(51, 51, 51);
+}
+
+.descricao p{
+  padding: 30px;
+}
+
+footer{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 29, 63);
+  min-height: 150px;
+  align-items: center;
+  color: white;
+}
+
+footer h2{
+  color: rgb(231, 231, 231);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  padding: 5px;
+  border: solid 1px;
+}
+
+.link:hover{
+  text-decoration: underline;
+  color: rgb(42, 42, 42);
+}
+
+.body{
+  min-height: 300px;
+}
+
+.botao{
+  color: white;
+  margin: 100px auto;
+  width: 200px;
+  height: 80px;
+  background-color: rgb(49, 29, 63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao:hover{
+  border: 5px rgb(61, 24, 84) solid;
+}
+
+.botao h2{
+  margin: 20px 20px;
 }
